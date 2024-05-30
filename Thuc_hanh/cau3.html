@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+
+</head>
+<body>
+<form id="formred">
+    <table id="table1" border="1" style="border-collapse: collapse">
+
+        <tr id="id1">
+            <th colspan="2" style="color: #0000CD"> Thông tin Thành Viên</th>
+        </tr>
+        <tr>
+            <th>Mã số</th>
+            <td><input type="text" id="maSo" placeholder="Nhập mã số" ></td>
+        </tr>
+        <tr>
+            <th>Loại tiết kiệm</th>
+            <td><input type="text" id="loaiTietKiem" placeholder="Loại tiết kiệm" ></td>
+        </tr>
+        <tr>
+            <th>Họ tên</th>
+            <td><input type="text" id="hoTen" placeholder="Họ và tên" ></td>
+        </tr>
+        <tr>
+            <th>CMND or CCCD</th>
+            <td><input type="number" id="cmnd" placeholder="Nhap cmnd or cccd" ></td>
+        </tr>
+        <tr>
+            <th>Ngày Mở Sổ</th>
+            <td><input type="date" id="ngayMoSo" placeholder="Ngày mo so" ></td>
+        </tr>
+        <tr>
+            <th>Số Tiền Gửi</th>
+            <td><input type="number" id="soTienGui" placeholder="Số tiền gửi" ></td>
+        </tr>
+        <tr>
+            <th colspan="2">
+                <button onclick="add()">Thêm</button>
+            </th>
+        </tr>
+    </table>
+    <table id="table2" style=" border-collapse: collapse">
+        <thead>
+        <tr style="background-color: #4169E1" >
+            <th colspan="9" style="color: white"> Danh sách thành viên</th>
+        </tr>
+        <tr style="background-color: #d3f6f5">
+            <th>STT</th>
+            <th>Mã số</th>
+            <th>Loại tiết kiệm</th>
+            <th>Họ và Tên</th>
+            <th>CMND</th>
+            <th>Ngày mở sổ</th>
+            <th>Số tiền gửi</th>
+            <th colspan="2">Chức năng</th>
+        </tr>
+        </thead>
+        <tbody id="display" style="text-align: center">
+        </tbody>
+    </table>
+</form>
+</body>
+<script src="main.js"></script>
+</html>

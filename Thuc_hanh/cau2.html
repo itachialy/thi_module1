@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+function kiemTraPhanSo(tuso1,mauso1,tuso2,mauso2) {
+    if (tuso1 * mauso2 === tuso2 * mauso1) {
+        return true
+    } else {
+        return false
+    }
+}
+    let tuso1 = parseInt(prompt("Nhập tử số thứ nhất"))
+    let mauso1 = parseInt(prompt(" mẫu số thứ nhất"))
+    let tuso2 = parseInt(prompt("Nhập tử số thứ hai"))
+    let mauso2 = parseInt(prompt(" mẫu số thứ hai"))
+    if (kiemTraPhanSo(tuso1,mauso1,tuso2,mauso2)){
+        alert("Hai phân số bằng nhau.")
+    } else {
+        alert("Hai phân số không bằng nhau.")
+    }
+
+</script>
+</body>
+</html>
